@@ -23,3 +23,195 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
+/*Font Colors*/
+.blue {
+    color: #4bd7e8 !important;
+}
+
+.grey1, .gray1 {
+    color: #f6f6f6 !important;
+}
+
+.grey2, .gray2 {
+    color: #DFDFDF !important;
+}
+
+.grey3, .gray3 {
+    color: #bebebe !important;
+}
+
+.grey4, .gray4 {
+    color: #9d9d9c !important;
+}
+
+.grey5, .gray5 {
+    color: #707070 !important;
+}
+
+.grey6, .gray6 {
+    color: #636363 !important;
+}
+
+.grey7, .gray7 {
+    color: #575756 !important;
+}
+
+.grey8, .gray8 {
+    color: #1c1c1c !important;
+}
+
+.grey9, .gray9 {
+    color: #191919 !important;
+}
+
+.grey10, .gray10 {
+    color: #202020 !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+/*Background Colors*/
+.blue-bkg {
+    background-color: #4bd7e8 !important;
+}
+
+.grey1-bkg, .gray1-bkg {
+    background-color: #f6f6f6 !important;
+}
+
+.grey2-bkg, .gray2-bkg {
+    background-color: #DFDFDF !important;
+}
+
+.grey3-bkg, .gray3-bkg {
+    background-color: #bebebe !important;
+}
+
+.grey4-bkg, .gray4-bkg {
+    background-color: #9d9d9c !important;
+}
+
+.grey5-bkg, .gray5-bkg {
+    background-color: #707070 !important;
+}
+
+.grey6-bkg, .gray6-bkg {
+    background-color: #636363 !important;
+}
+
+.grey7-bkg, .gray7-bkg {
+    background-color: #575756 !important;
+}
+
+.grey8-bkg, .gray8-bkg {
+    background-color: #1c1c1c !important;
+}
+
+.grey9-bkg, .gray9-bkg {
+    background-color: #191919 !important;
+}
+
+.grey10-bkg, .gray10-bkg {
+    background-color: #202020 !important;
+}
+
+.white-bkg {
+    background-color: #fff !important;
+}
+
+
+/* General Styling */
+
+body {
+    background-color: #202020;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+button {
+    color: white !important;
+}
+
+.first-page {
+    background-image: url(/wp-content/themes/thirdwayv-theme/resources/assets/images/graytheme.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+}
+
+/* Text card on first page */
+
+#firstpage-card {
+    background: transparent;
+    max-width: 20vw;
+    margin-left: 5%;
+    margin-top: 10vh
+}
+
+#firstpage-card > .card-body {
+    padding: 16px;
+}
+
+hr {
+    margin: 0;
+    height: 0.1rem;
+    background: linear-gradient(to right,  #575756 50% , white 50% );
+    margin-bottom: 10px;
+}
+
+/* Follow us section */
+
+.follow-container {
+    position: absolute;
+    right: -2%;
+    width: 20vw;
+    transform: rotate(-90deg);
+}
+
+.follow-container > div:first-child > h5 {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons > i {
+    // display: inline-table;
+    margin: 40px;
+    transform: rotate(90deg);
+}
+
+/* Arrows */
+
+.arrows-container {
+    position: absolute;
+    top: 80vh;
+    width: 100%;
+}
+
+.arrows {
+    text-align: center;
+}
+
+.arrows:nth-child(2) {
+    position: relative;
+}
+
+.arrows:nth-child(2) > img {
+    position: absolute;
+    bottom: 0;
+}
+
+.arrows-container > .arrows > h5:first-child {
+    // transform: rotate(-90deg);pp
+}

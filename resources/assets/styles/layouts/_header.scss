@@ -5,3 +5,25 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+nav {
+  background-color: #202020;
+}
+
+.nav-item > a {
+  color: #BEBEBE;
+}
+
+.nav-item.active > a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 1.1em;
+}
+
+#navbarSupportedContent {
+  margin-right: 5%;
+}
+
+.navbar-brand {
+  margin-left: 5%;
+}
