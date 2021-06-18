@@ -125,6 +125,19 @@
 
 /* General Styling */
 
+html {
+    margin-top: 0 !important;
+}
+
+.transparent-header {
+	color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 150px; /*IDK IF THIS IS RIGHT*/
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	-webkit-text-stroke: .5px white;
+}
+
 body {
     background-color: #202020;
     color: white;
@@ -143,7 +156,16 @@ button {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
+}
+
+.second-page {
+    height: 100vh;
+    text-align: center;
+}
+
+#wpadminbar {
+    display: none !important;
 }
 
 /* Text card on first page */

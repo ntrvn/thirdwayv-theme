@@ -1,17 +1,10 @@
 <!doctype html>
-<html {!! get_language_attributes() !!}>
+<html>
   @include('partials.head')
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
     @include('partials.header')
-    <!-- <div class="wrap container" role="document">
-      <div class="content">
-        <main class="main">
-          <!-- @yield('content') -->
-<!-- 
-        </main>
-      </div>
-    </div> -->
+
     <div class="first-page">
       <div class="card transparent-card" id="firstpage-card">
         <div class="card-body">
@@ -47,8 +40,15 @@
           <img src="<?php bloginfo('template_url') ?>/assets/images/arrow-up-group.svg" alt="" />
         </div>
       </div>
-
     </div>
+
+    <div class="second-page">
+      @foreach ($get_intro as $key=>$post)
+        <h1 class="transparent-header">{{$post->title}}</h1>
+          <p> {{html_entity_decode($post->excerpt)}} </p>
+      @endforeach
+    </div>
+
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp

@@ -30,4 +30,18 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public function get_intro(){
+        $blog = collect(get_posts([
+            'post_type' => 'post',
+            'category' => 0
+        ]))->map(function ($post) {
+            return (object) [
+                'title' => get_the_title($post),
+                'excerpt' => get_the_excerpt($post),
+            ];
+        });
+    
+        return $blog;
+    }
 }
