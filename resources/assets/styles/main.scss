@@ -178,6 +178,10 @@ button {
     margin: 0 auto;
 }
 
+.card-large {
+    width: 50vw !important;
+}
+
 /* Text card on first page */
 
 #firstpage-card {
@@ -287,3 +291,25 @@ button {
 }
 
 /* third page */
+
+.third-page-no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 10vh;
+}
+
+.third-page-no-padding > h1 {
+    line-height: 10vh;
+}
+
+.third-page-no-padding:nth-child(1) {
+    background-color: #191919;
+}
+
+.third-page-no-padding:nth-child(2) {
+    background-color: #1C1C1C;
+}
+
+.third-page-no-padding:nth-child(3) {
+    background-color: #292929;
+}

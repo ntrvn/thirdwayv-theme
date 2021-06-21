@@ -46,10 +46,12 @@
       <h1 class="transparent-header">Why Thirdwayv?</h1>
       <div class="card transparent-card card-centered">
         <div class="card-body">
-          @foreach ($get_intro as $key=>$post)
+          <!-- @foreach ($get_intro as $key=>$post)
             <h3 class="card-title blue">{{$post->title}}</h3>
             <p class="card-text grey5">{{html_entity_decode($post->excerpt)}} </p>
-          @endforeach        
+          @endforeach         -->
+          <h3 class="card-title blue">Becausewhen lives are on the line, we deliver.</h3>
+          <p class="card-text grey5">Thirdwayv  enables  some  of  the  world's  most  demanding  and  safety-critical  loT  services.  Services where a patient's very well-being hinges upon our "getting it right". Time and again we've proven we can. And we bring those same assurances to other applications and markets that need secure and reliable operation.  </p>
         </div>
       </div>
 
@@ -115,13 +117,34 @@
 
           <div>
             <img src="<?php bloginfo('template_url') ?>/assets/images/thirdPage/third-page-icon-first.svg" alt="">
-            <div class="card transparent-card card-centered">
+            <div class="card transparent-card card-centered card-large">
               <div class="card-body">
                 <h3 class="card-title blue">Our Missionis simple</h3>
                 <p class="card-text grey5">We live in exciting times, filled with never-before-seen opportunity.But inextricably linked with thetechnological potential are threatsthat can be even greater in scope. Threats that can destroy the verything that's central to any brand –its reputation.</p>
                 <p class="card-text grey5">Our mission at Thirdwayv is straightforward: we want to help take the anxiety out of the IoT.</p>
                 <p class="card-text grey5">We   want   to   help   your   enterprise   move   safely   beyond   place-to-place   andperson-to-person communications  to  a  new  wave  of  thing-to-thingnetworks.  A  third  wave,  if  you  will.  One  without worries. One wherewe've secured every element of the system and all of the devicesconnected to it.  Our goal is an IoT you can trust, for safety-criticalapplications and services that depend on it.</p>
               </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="<?php bloginfo('template_url') ?>/assets/images/thirdPage/third-page-icon-second.svg" alt="">
+            <div class="card transparent-card card-centered card-large">
+              <div class="card-body">
+                <h3 class="card-title blue">OUR VALUES ARE WHAT GROUND US</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col third-page-no-padding">
+              <h1>CONNECTION</h1>
+            </div>
+            <div class="col third-page-no-padding">
+              <h1>INTEGRITY</h1>
+            </div>
+            <div class="col third-page-no-padding">
+              <h1>COLLABORATION</h1>
             </div>
           </div>
         </div>
