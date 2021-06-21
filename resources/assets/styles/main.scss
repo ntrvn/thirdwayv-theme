@@ -156,16 +156,26 @@ button {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 80vh;
+    height: 81vh;
 }
 
-.second-page {
+.second-page, .third-page {
     height: 100vh;
     text-align: center;
 }
 
 #wpadminbar {
     display: none !important;
+}
+
+.card {
+    border: none !important;
+}
+
+.card-centered {
+    background: transparent;
+    width: 33vw;
+    margin: 0 auto;
 }
 
 /* Text card on first page */
@@ -181,7 +191,7 @@ button {
     padding: 16px;
 }
 
-hr {
+.bar-top-hr {
     margin: 0;
     height: 0.1rem;
     background: linear-gradient(to right,  #575756 50% , white 50% );
@@ -237,3 +247,43 @@ hr {
 .arrows-container > .arrows > h5:first-child {
     // transform: rotate(-90deg);pp
 }
+
+/* second page */
+
+#secondpage-card > .card-body {
+    padding: 0 !important;
+}
+
+.margin-header {
+    margin: 4vh;
+}
+
+#card-list-items-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.card-list-items {
+    background: transparent;
+    margin: 0 auto;
+}
+
+.card-icon-container {
+    display: inline-block;
+    border-radius: 50%;
+    background: #161616;
+}
+
+.card-list-items-icon {
+    padding: 5px;
+    width: 75%;
+    height: auto;
+}
+
+.card-list-items-hr {
+    background: #707070;
+    width: 75%;
+}
+
+/* third page */

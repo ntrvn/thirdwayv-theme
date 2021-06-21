@@ -34,7 +34,7 @@ class App extends Controller
     public function get_intro(){
         $blog = collect(get_posts([
             'post_type' => 'post',
-            'category' => 0
+            'category_name' => 'thirdwayvintro'
         ]))->map(function ($post) {
             return (object) [
                 'title' => get_the_title($post),
@@ -44,4 +44,18 @@ class App extends Controller
     
         return $blog;
     }
+
+    // public function get_how_we_do_it(){
+    //     $blog = collect(get_posts([
+    //         'post_type' => 'post',
+    //         'category' => 1
+    //     ]))->map(function ($post) {
+    //         return (object) [
+    //             'title' => get_the_title($post),
+    //             'excerpt' => get_the_excerpt($post),
+    //         ];
+    //     });
+    
+    //     return $blog;
+    // }
 }
