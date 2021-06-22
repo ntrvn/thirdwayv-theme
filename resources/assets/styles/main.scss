@@ -132,10 +132,11 @@ html {
 .transparent-header {
 	color: transparent;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 150px; /*IDK IF THIS IS RIGHT*/
+	font-size: 100px; /*IDK IF THIS IS RIGHT*/
 	font-weight: 600;
 	letter-spacing: 0.05em;
 	-webkit-text-stroke: .5px white;
+    margin-bottom: 0;
 }
 
 body {
@@ -156,16 +157,21 @@ button {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 81vh;
+    height: 100vh;
 }
 
-.second-page, .third-page {
+.second-page, .third-page, .leaders-page {
     height: 100vh;
     text-align: center;
 }
 
 #wpadminbar {
     display: none !important;
+}
+
+.small-text {
+    font-size: 0.7rem;
+    margin: 0;
 }
 
 .card {
@@ -176,6 +182,14 @@ button {
     background: transparent;
     width: 33vw;
     margin: 0 auto;
+}
+
+.card-large {
+    width: 50vw !important;
+}
+
+.card-large > .card-body {
+    padding: 0 !important;
 }
 
 /* Text card on first page */
@@ -244,10 +258,6 @@ button {
     bottom: 0;
 }
 
-.arrows-container > .arrows > h5:first-child {
-    // transform: rotate(-90deg);pp
-}
-
 /* second page */
 
 #secondpage-card > .card-body {
@@ -255,18 +265,40 @@ button {
 }
 
 .margin-header {
-    margin: 4vh;
+    margin: 2vh;
 }
 
 #card-list-items-container {
     width: 90%;
     margin: 0 auto;
-    height: 60vh;
+
 }
 
 .card-list-items {
     background: transparent;
-    margin: 0 auto;
+    margin: 0;
+    width: 100% !important;
+}
+
+.card-list-items > img {
+    height: 20vh !important;
+    width: auto !important;
+}
+
+.card-disabled {
+    border: none;
+}
+
+.card-active {
+    border: 1px solid !important;
+}
+
+.card-disabled > .card-body > .card-list-items-hr, .card-disabled > .card-body > .small-text {
+    display: none;
+}
+
+.card-active > .card-body > .card-list-items-hr, .card-active > .card-body > .small-text {
+    display: visible;
 }
 
 .card-icon-container {
@@ -287,3 +319,75 @@ button {
 }
 
 /* third page */
+
+.company-panels {
+    height: 10vh;
+}
+
+.company-panels > h2 {
+    line-height: 10vh;
+}
+
+.company-panels:nth-child(1) {
+    background-color: #191919;
+}
+
+.company-panels:nth-child(2) {
+    background-color: #1C1C1C;
+}
+
+.company-panels:nth-child(3) {
+    background-color: #292929;
+}
+
+.company-panels > div {
+    margin: 20px auto;
+    background-color: #191919;
+    width: 80%;
+}
+
+.company-panels > div > p {
+    padding: 10px;
+}
+
+.col-active > img, .col-active > div {
+    visibility: visible;
+}
+
+.col-disabled > img, .col-disabled > div {
+    visibility: hidden;
+}
+
+// leaders page
+
+.leaders-card-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.leaders-card-items > div {
+    background: transparent;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.leaders-card-items > .card > .card-body {
+    margin-top: 10px;
+    padding: 0 !important;
+    text-align: left;
+}
+
+.leaders-card-items > .card > .card-body > h5 {
+    margin-bottom: 0;
+}
+
+.leaders-card-items > div > img {
+    height: 35vh;
+    width: 15vw;
+}
+
+.leaders-btn {
+    border: 1px solid #707070;
+    background-color: #191919;
+    color: #707070
+}
