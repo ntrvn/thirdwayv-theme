@@ -9,6 +9,7 @@
     @include('partials.home.whyThirdwayv')
     @include('partials.home.company')
     @include('partials.home.leaders')
+    @include('partials.home.letsTalk')
 
     @php do_action('get_footer') @endphp
     @include('partials.footer')

@@ -1,5 +1,5 @@
-<div class="leaders-page">
-    <div style="margin: 10vh 0;">
+<div class="leaders-page" style="">
+    <div style="padding: 10vh">
         <img src="<?php bloginfo('template_url') ?>/assets/images/leaders/leaders-icon.svg" alt="">
         <h3 class="card-title blue">MEET OUR LEADERS</h3>
     </div>
