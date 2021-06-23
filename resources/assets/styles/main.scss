@@ -391,3 +391,45 @@ button {
     background-color: #191919;
     color: #707070
 }
+
+.leader-arrows {
+    width: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.leaders-know-more {
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.leaders-know-more > p {
+    padding: 10px;
+    background-color: #191919;
+}
+
+.leaders-active > .row:first-child > .col:first-child > button {
+    display: none;
+}
+
+.leaders-active > .row:first-child > .col:first-child > img {
+    display: block;
+}
+
+.leaders-disabled > .row:first-child > .col:first-child > button {
+    display: block;
+}
+
+.leaders-disabled > .row:first-child > .col:first-child > img {
+    display: none;
+}
+
+.leaders-active > .leaders-know-more {
+    visibility: visible;
+}
+
+.leaders-disabled > .leaders-know-more {
+    visibility: hidden;
+}
