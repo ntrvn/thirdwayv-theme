@@ -1,0 +1,57 @@
+.blogs-carousel {
+    width: 90vw;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-item-left, .carousel-item-right, .carousel-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item-left > div > img, .carousel-item-right > div > img{
+    width: 20vw !important;
+    height: 10vw;
+}
+
+.carousel-item-left > div, .carousel-item-right > div, .carousel-item-middle > div {
+    text-align: left;
+}
+
+.carousel-item-left > div > h5, .carousel-item-right > div > h5 {
+    font-size: 1rem !important;
+    margin-bottom: 0;
+}
+
+.carousel-item-left > div > p, .carousel-item-right > div > p {
+    font-size: 0.9rem !important;
+    margin-bottom: 0;
+}
+
+.carousel-item-middle > div > p, .carousel-item-middle > div > h5 {
+    margin-bottom: 0;
+}
+
+.carousel-indicators {
+    position: relative !important;
+}
+
+.carousel-indicators-container {
+    margin-top: 5vh;
+}
+
+.carousel-indicators > li {
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+// .carousel-item-right {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     padding: 0 !important;
+// }
+

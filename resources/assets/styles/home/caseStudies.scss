@@ -1,0 +1,42 @@
+.wrapper {
+    margin-top: 10vh;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.cs-section-2-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cs-inner-boxes {
+    border-left: 1px solid #4bd7e8;
+    padding: 0 !important;
+    transform: skew(-20deg);
+    margin: 10px;
+}
+
+.top-box {
+    height: 10vh;
+    background-color: #191919;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-box > h5, .bottom-box > p {
+    transform: skew(20deg);
+}
+
+.bottom-box > p {
+    text-align: left;
+    padding-left: 2vw;
+}
+
+.cs-img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+

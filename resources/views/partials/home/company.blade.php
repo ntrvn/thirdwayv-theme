@@ -25,7 +25,7 @@
             <h3 class="card-title blue">OURR VALUES ARE WHAT GROUND US</h3>
         </div>
 
-        <div class="row">
+        <div class="row" style="max-width: 99vw; margin: 0 auto;">
             <div class="col company-panels col-active">
                 <h2>CONNECTION</h2>
                 <img src="<?php bloginfo('template_url') ?>/assets/images/thirdPage/third-page-arrow-down.svg" alt="">
