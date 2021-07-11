@@ -1,5 +1,4 @@
 <div class="first-page">
-    @include('partials.header') 
     <div class="card transparent-card" id="firstpage-card">
         <div class="card-body">
             <hr class="bar-top-hr"/>

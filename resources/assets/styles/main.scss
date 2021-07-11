@@ -28,6 +28,9 @@
 @import "home/security.scss";
 @import "home/blogs.scss";
 @import "home/letsTalk.scss";
+@import "caseStudies/caseStudies.scss";
+@import "products/products.scss";
+@import "security/security.scss";
 /*Font Colors*/
 .blue {
     color: #4bd7e8 !important;
@@ -333,7 +336,7 @@ button {
     height: 10vh;
 }
 
-.company-panels > h2 {
+.company-panels > h2, .company-panels > h4 {
     line-height: 10vh;
 }
 
