@@ -28,8 +28,8 @@
     </section>
 
     <section class="security-second-page">
-        <h2 class="transparent-header" style="margin-top: 10vh">{{get_field("order")}}</h1>
-        <h2 class="transparent-header" style="margin-top: 0">{{get_field("title")}}</h1>
+        <h2 class="transparent-header" style="margin-top: 10vh">{{get_field("order")}}</h2>
+        <h2 class="transparent-header" style="margin-top: 0">{{get_field("title")}}</h2>
         
         <div class="single-security-description">
             {!! get_field("description") !!}

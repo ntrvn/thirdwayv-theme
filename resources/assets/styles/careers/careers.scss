@@ -1,0 +1,98 @@
+.careers-screen-container {
+    min-height: 100vh;
+    text-align: center;
+}
+
+.careers-description {
+    width: 20vw;
+    margin: 0 auto 5vh auto;
+    text-align: center;
+}
+
+.careers-detail-container {
+    width: 90vw;
+    margin: 9vh auto;
+}
+
+.career-detail-circle {
+    height: 15vh;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vh;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid #707070;    
+}
+
+.career-detail-circle::after {
+    content: '';
+    height: 14vh;
+    width: 14vh;
+    display: block;
+    position: absolute;
+    border: 1px solid #707070;
+    border-radius: 50%;
+}
+
+.career-detail-circle > h5 {
+    margin-bottom: 0;
+}
+
+.career-detail-text {
+    text-align: center;
+    width: 90%;
+    margin: 5vh auto 0 auto;
+}
+
+.careers-benefit-summary {
+    width: 20vw;
+    margin: 0 auto
+}
+
+.careers-perks-container {
+    margin-top: 10vh;
+}
+
+.careers-panel {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.careers-panel:nth-child(1) {
+    background-color: #191919;
+}
+
+.careers-panel:nth-child(2) {
+    background-color: #1C1C1C;
+}
+
+.careers-panel:nth-child(3) {
+    background-color: #292929;
+}
+
+.careers-panel > div > p, .careers-panel > div > h5 {
+    margin-bottom: 0;
+}
+
+.careers-requirements {
+    margin-top: 10vh;
+    background-color: #191919;
+    height: 20vh;
+    border: 1px solid #707070; 
+}
+
+.careers-requirements > .col {
+    border-left: 1px solid #707070;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.careers-resume {
+    margin-top: 10vh;
+}

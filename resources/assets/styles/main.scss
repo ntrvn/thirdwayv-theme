@@ -31,6 +31,8 @@
 @import "caseStudies/caseStudies.scss";
 @import "products/products.scss";
 @import "security/security.scss";
+@import "careers/careers.scss";
+@import "blogs/blogs.scss";
 /*Font Colors*/
 .blue {
     color: #4bd7e8 !important;
@@ -165,7 +167,7 @@ button {
 }
 
 .first-page {
-    background-image: url(/wp-content/themes/thirdwayv-theme/resources/assets/images/graytheme.svg);
+    background-image: url(http://localhost:10008/wp-content/uploads/2021/07/graytheme.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

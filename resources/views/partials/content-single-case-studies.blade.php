@@ -19,7 +19,7 @@
         </div>
     
         <div class="row arrows-container">
-            <div class="col arrows">
+            <div class="col arrows">  
                 <img src="<?php bloginfo('template_url') ?>/assets/images/arrrow-down-group.svg" alt="" />
             </div>
             <div class="col arrows" style="visibility: hidden">
@@ -31,8 +31,38 @@
     <section style="max-height: 100vh; text-align: center">
         <h1 class="transparent-header" style="margin-top: 10vh">{{get_field("title")}}</h1>
         <div class="row single-case-detail-container">
+            @php
+                $post_id = $post->ID; // current post ID
+                $cat = get_the_category(); 
+                $current_cat_id = $cat[0]->cat_ID; // current category ID 
+
+                $args = array( 
+                    'post_type' => 'case-studies',
+                    'category' => $current_cat_id,
+                );
+                $posts = get_posts( $args );
+                // get IDs of posts retrieved from get_posts
+                $ids = array();
+                foreach ( $posts as $thepost ) {
+                    $ids[] = $thepost->ID;
+                }
+                // get and echo previous and next post in the same category
+                $thisindex = array_search( $post_id, $ids );
+                $previd    = isset( $ids[ $thisindex - 1 ] ) ? $ids[ $thisindex - 1 ] : false;
+                $nextid    = isset( $ids[ $thisindex + 1 ] ) ? $ids[ $thisindex + 1 ] : false;
+                $showNext = "visible";
+                $showPrev = "visible";
+                if (str_contains(get_permalink($nextid), $_SERVER['REQUEST_URI'])) {
+                    $showNext = "hidden";
+                }
+                if (str_contains(get_permalink($previd), $_SERVER['REQUEST_URI'])) {
+                    $showPrev = "hidden";
+                }
+            @endphp
             <div class="col-1 single-case-img-container">
-                <img src="<?php bloginfo('template_url') ?>/assets/images/caseStudies/left-arrow.svg" alt="" class="cs-img">
+                <a href="<?php echo get_permalink($previd) ?>" style="visibility: <?php echo $showPrev ?>">
+                    <img src="<?php bloginfo('template_url') ?>/assets/images/caseStudies/left-arrow.svg" alt="" class="cs-img">
+                </a>
             </div>
             <div class="col">
                 <div class="single-case-detail">
@@ -45,9 +75,12 @@
                 </div>
             </div>
             <div class="col-1 single-case-img-container">
-                <img src="<?php bloginfo('template_url') ?>/assets/images/caseStudies/right-arrow.svg" alt="" class="cs-img">
+                <a href="<?php echo get_permalink($nextid) ?>" style="visibility: <?php echo $showNext ?>">
+                    <img src="<?php bloginfo('template_url') ?>/assets/images/caseStudies/right-arrow.svg" alt="" class="cs-img">
+                </a>
             </div>
         </div>
+        
         <div class="row" style="max-width: 99vw; margin: 15vh auto 0 auto;">
             <div class="col company-panels col-active">
                 <h4>Healthcare & Consumer Medical Devices</h4>
