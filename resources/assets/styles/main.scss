@@ -305,10 +305,21 @@ button {
 
 .card-active {
     border: 1px solid !important;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
 }
 
 .card-disabled > .card-body > .card-list-items-hr, .card-disabled > .card-body > .small-text {
-    display: none;
+    height: 0; opacity: 0;
+    transition-timing-function: ease-out, step-end;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
 }
 
 .card-active > .card-body > .card-list-items-hr, .card-active > .card-body > .small-text {
@@ -374,7 +385,13 @@ button {
 }
 
 .col-disabled > img, .col-disabled > div {
-    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
 }
 
 // leaders page
@@ -451,4 +468,8 @@ button {
 
 .leaders-disabled > .leaders-know-more {
     visibility: hidden;
+}
+
+.card-img-top:hover, .company-panels-header:hover {
+    cursor: pointer;
 }

@@ -27,7 +27,7 @@
 
         <div class="row" style="max-width: 99vw; margin: 0 auto;">
             <div class="col company-panels col-active">
-                <h2>CONNECTION</h2>
+                <h2 class="company-panels-header">CONNECTION</h2>
                 <img src="<?php bloginfo('template_url') ?>/assets/images/thirdPage/third-page-arrow-down.svg" alt="">
                 <div>
                     <p class="small-text grey5">
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="col company-panels col-disabled">
-                <h2>INTEGRITY</h2>
+                <h2 class="company-panels-header">INTEGRITY</h2>
                 <img src="<?php bloginfo('template_url') ?>/assets/images/thirdPage/third-page-arrow-down.svg" alt="">
                 <div>
                     <p class="small-text grey5">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="col company-panels col-disabled">
-                <h2>COLLABORATION</h2>
+                <h2 class="company-panels-header">COLLABORATION</h2>
                 <img src="<?php bloginfo('template_url') ?>/assets/images/thirdPage/third-page-arrow-down.svg" alt="">
                 <div>
                     <p class="small-text grey5">
