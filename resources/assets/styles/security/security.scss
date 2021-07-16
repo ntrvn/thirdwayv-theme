@@ -1,0 +1,57 @@
+.security-second-page {
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.single-security-description {
+    width: 30vw;
+    margin: 0 auto 5vh auto;
+}
+
+.single-security-detail {
+    text-align: left;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.single-security-detail > .row > .col > div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.single-security-detail > .row > .col > div > h5 {
+    margin: 2vh;
+    text-align: center;
+}
+
+.single-security-detail > .row > .col > h5 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.single-security-detail > .row > .col:nth-child(2){
+    border-right: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+}
+
+.security-panel-container {
+    position: absolute;
+    bottom: 0;
+    width: 99vw; 
+    margin: 0 auto;
+}
+
+.security-simple-detail {
+    margin-top: 20vh;
+}
+
+.security-simple-detail > .row {
+    height: 20vh;
+}
+
+.security-simple-detail > .row > .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

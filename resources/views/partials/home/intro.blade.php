@@ -1,6 +1,17 @@
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+
+<div class="first-page">
+    <div class="card transparent-card" id="firstpage-card">
+        <div class="card-body">
+            <hr class="bar-top-hr"/>
+            <h3 class="card-title blue" style="color:black">Connected. Protective</h5>
+            <p class="card-text grey2" style="color:black">
+                Thirdwayv helps your enterprise realize the full potential 
+                of lOT connectivity. All while neutralizingsecurity threats 
+                that can run ruin the customer experience and your 
+                reputation.
+            </p>
+        </div>
+    </div>
 
 <div id="top" class="first-page">
 
