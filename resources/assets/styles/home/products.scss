@@ -1,9 +1,48 @@
+.mobile-products-container > div > .cs-img {
+  width: 85px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.mobile-products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    @media only screen and (min-width: 768px) {
+		/* tablets and desktop */
+		display: none;
+	}    
+}
+
 .products-subsection-2 {
     background-color: #191919 !important;
-    width: 35vw;
     margin: 0 auto;
+    @media only screen and (min-width: 768px) {
+		/* tablets and desktop */
+		width: 35vw;
+	}
 }
 
 .products-subsection-2 > div > hr {
     background-color: #DFDFDF;
+}
+
+.products-svg-container {
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+
+.products-svg-container > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.products-svg-container {
+    @media only screen and (max-width: 767px) {
+		/* phones */
+		display: none;
+	}
 }
