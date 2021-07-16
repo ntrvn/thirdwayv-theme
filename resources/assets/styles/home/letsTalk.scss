@@ -1,8 +1,16 @@
 .lets-talk-form-wrapper {
-    width: 60vw;
     margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
+    
+    @media only screen and (max-width: 767px) {
+		/* phones */
+		padding: 1.25rem;
+	}
+    @media only screen and (min-width: 768px) {
+		/* tablets and desktop */
+		width: 60vw;
+	}
 }
 
 .form-control {
