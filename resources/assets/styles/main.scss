@@ -170,23 +170,22 @@ html {
 }
 
 .transparent-header {
-  color: transparent;
-  font-family: "Montserrat", sans-serif;
-  // font-size: 100px; /*IDK IF THIS IS RIGHT*/
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  -webkit-text-stroke: 0.5px white;
-  margin-bottom: 0;
-  margin-top: 48px;
-  @media only screen and (min-width: 768px) {
-    /* tablets and desktop */
-    font-size: 100px;
-  }
-
-  @media only screen and (max-width: 767px) {
-    /* phones */
-    font-size: 85px;
-  }
+	color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	-webkit-text-stroke: .5px white;
+	margin-bottom: 0;
+	margin-top: 48px;
+	@media only screen and (min-width: 768px) {
+		/* tablets and desktop */
+		font-size: 3rem;
+	}
+	
+	@media only screen and (max-width: 767px) {
+		/* phones */
+		font-size: 2rem;
+	}
 }
 
 body {
@@ -195,7 +194,8 @@ body {
 }
 
 a {
-  color: white;
+	color: white;
+	overflow-wrap: anywhere;
 }
 
 button {
@@ -235,6 +235,7 @@ button {
 .left-align {
   text-align: left !important;
 }
+
 
 .logo-footer {
   width: 75%;
@@ -498,11 +499,13 @@ button {
   text-decoration: none;
 }
 
-.company-panels > h2,
-.company-panels > h4,
-.company-panels > a > h4 {
-  line-height: 10vh;
-  margin-top: 0.5rem;
+.company-panels > h2, .company-panels > h4, .company-panels > a > h4 {
+   line-height: 3vh;
+    margin: 1rem;
+
+	@media only screen and (max-width: 768px) {
+		line-height: 5vh;
+	}
 }
 
 .company-panels:nth-child(1) {
@@ -672,7 +675,8 @@ button {
 
 // footer
 .footer {
-  padding: 8rem 10rem 5rem;
+	padding: 8rem 5rem 5rem;
+	// width: 90%;
 
   @media screen and (max-width: 768px) {
     padding: 0 2rem;
@@ -680,11 +684,17 @@ button {
 }
 
 .footer-card {
-  padding: 0 auto;
-  padding-right: 10rem;
+	padding: 0 auto;
+	padding-right: 2rem;
 
-  @media screen and (max-width: 768px) {
-    padding-top: 3rem !important;
-    padding-right: 0;
-  }
+	@media screen and (max-width: 768px) {
+			padding-top: 3rem!important;
+			padding-right: 0;
+	}
 }
+
+.logo-footer {
+	width: 9rem; 
+	height: auto;
+}
+
