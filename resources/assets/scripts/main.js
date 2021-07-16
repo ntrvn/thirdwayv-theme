@@ -33,9 +33,19 @@ $(document).ready(function(){
   $('.blogs-page-carousel').slick({
     centerMode: true,
     centerPadding: centerPadding + 'px',
+    dots: true,
     slidesToShow: 3,
     arrows: true,
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2,
+        },
+      },
       {
         breakpoint: 768,
         settings: {

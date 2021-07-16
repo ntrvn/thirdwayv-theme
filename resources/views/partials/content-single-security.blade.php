@@ -17,14 +17,14 @@
             </div>
         </div>
     
-        <div class="row arrows-container">
+        <!-- <div class="row arrows-container">
             <div class="col arrows">
                 <img src="<?php bloginfo('template_url') ?>/assets/images/arrrow-down-group.svg" alt="" />
             </div>
             <div class="col arrows" style="visibility: hidden">
                 <img src="<?php bloginfo('template_url') ?>/assets/images/arrow-up-group.svg" alt="" />
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section class="security-second-page">

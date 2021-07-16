@@ -3,9 +3,10 @@
   <body @php body_class() @endphp>
 
     <section class="single-case-studies-container" style="background: url(<?php bloginfo('template_url') ?>/assets/images/caseStudies/{{get_field("image_name")}}.svg);">
-        <h2 class="single-case-header">{{get_field("category_name")}}</h2>
+    
+    <h2 class="single-case-header">{{get_field("category_name")}}</h2>
 
-        <div class="follow-container" style="top: 30vh">
+    <div class="follow-container" style="top: 30vh">
             <div class="">
                 <h5>FOLLOW US</h5>
             </div>
@@ -18,18 +19,18 @@
             </div>
         </div>
     
-        <div class="row arrows-container">
+        <!-- <div class="row arrows-container">
             <div class="col arrows">  
                 <img src="<?php bloginfo('template_url') ?>/assets/images/arrrow-down-group.svg" alt="" />
             </div>
             <div class="col arrows" style="visibility: hidden">
                 <img src="<?php bloginfo('template_url') ?>/assets/images/arrow-up-group.svg" alt="" />
             </div>
-        </div>
+        </div> -->
     </section>
 
-    <section style="max-height: 100vh; text-align: center">
-        <h1 class="transparent-header" style="margin-top: 10vh">{{get_field("title")}}</h1>
+    <section style="min-height: 100vh; text-align: center">
+        <h1 class="blog-page-h1 transparent-header">{{get_field("title")}}</h1>
         <div class="row single-case-detail-container">
             @php
                 $post_id = $post->ID; // current post ID
@@ -82,7 +83,7 @@
             </div>
         </div>
         
-        <div class="row" style="max-width: 99vw; margin: 15vh auto 0 auto;">
+        <div class="row " style="max-width: 99vw; margin: 15vh auto 0 auto;">
             @php
                 $leftColor = 'grey2';
                 $middleColor = 'grey2';

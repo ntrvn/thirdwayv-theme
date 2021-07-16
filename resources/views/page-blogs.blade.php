@@ -5,7 +5,7 @@
 <section 
     class="blogs-top-container" 
     style="
-        background: url(<?php bloginfo('template_url') ?>/assets/images/careers-cover.svg);
+        background: url(<?php bloginfo('template_url') ?>/assets/images/careers-cover.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     ">
@@ -24,14 +24,14 @@
         </div>
     </div>
 
-    <div class="row arrows-container">
+    <!-- <div class="row arrows-container">
         <div class="col arrows">
             <img src="<?php bloginfo('template_url') ?>/assets/images/arrrow-down-group.svg" alt="" />
         </div>
         <div class="col arrows" style="visibility: hidden">
             <img src="<?php bloginfo('template_url') ?>/assets/images/arrow-up-group.svg" alt="" />
         </div>
-    </div>
+    </div> -->
 </section>
 
 <section class="blogs-bottom-container">

@@ -7,8 +7,13 @@
 }
 
 .blogs-description {
-    width: 20vw;
+    width: 53%;
     margin: 0 auto;
+
+    @media only screen and (max-width: 768px) {
+        width: 93%;
+        text-align: center;
+    }
 }
 
 .blogs-page-carousel {
@@ -52,6 +57,13 @@
 
 .blogs-carousel-visibility {
     display: none;
-    width: 70vw;
+    width: 93%;
     margin: 0 auto;
+}
+
+.blog-page-h1 {
+    @media only screen and (max-width: 767px) {
+        margin-top: 5vh!important;
+        font-size: 45px!important;
+    }
 }
