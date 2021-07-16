@@ -1,6 +1,13 @@
+import SmoothScroll from 'smooth-scroll';
+
 export default {
   init() {
     // JavaScript to be fired on the home page
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true,
+    });
+    console.log(scroll)
 
     // adding onclick event for whythirdwayv screen
     $('.card-img-top').on('click', function() {
@@ -26,6 +33,26 @@ export default {
         parent.removeClass('col-disabled');
         parent.addClass('col-active');
       }
+    })
+
+
+    // adding onclick event for leaders
+    $('.leaders-btn').on('click', function() {
+      $('.leaders-active').removeClass('leaders-active').addClass('leaders-disabled');
+      // showing current active card
+      const parent = $(this).parent().parent().parent();
+      if (parent.hasClass('leaders-disabled')) {
+        parent.removeClass('leaders-disabled');
+        parent.addClass('leaders-active');
+      }
+    })
+
+    $('#Group_19075').on('click', function() {
+      window.location.href = '/products/appauth';
+    })
+
+    $('#Group_19077').on('click', function() {
+      window.location.href = '/products/secureconnectivity';
     })
   },
   finalize() {

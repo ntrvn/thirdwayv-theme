@@ -23,9 +23,9 @@
                                     <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/leaders-linkedIn.svg" alt="">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row leaders-know-more" style="">
-                            {!! get_field("ceo_description") !!}
+                            <div class="row leaders-know-more" style="">
+                                {!! get_field("ceo_description") !!}
+                            </div>
                         </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                         <div class="row">
                             <div class="col">
                                 <button class="btn leaders-btn">know more</button>
-                                <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/third-page-arrow-down.svg" alt="">
+                                <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/third-page-arrow-down.svg" alt="" class="leader-arrows">
                             </div>
                             <div class="col" style="text-align: right;">
                                 <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/leaders-linkedIn.svg" alt="">
@@ -61,7 +61,7 @@
                         <div class="row">
                             <div class="col">
                                 <button class="btn leaders-btn">know more</button>
-                                <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/third-page-arrow-down.svg" alt="">
+                                <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/third-page-arrow-down.svg" alt="" class="leader-arrows">
                             </div>
                             <div class="col" style="text-align: right;">
                                 <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/leaders-linkedIn.svg" alt="">
@@ -83,7 +83,7 @@
                         <div class="row">
                             <div class="col">
                                 <button class="btn leaders-btn">know more</button>
-                                <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/third-page-arrow-down.svg" alt="">
+                                <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/third-page-arrow-down.svg" alt="" class="leader-arrows">
                             </div>
                             <div class="col" style="text-align: right;">
                                 <img src="https://www.thirdwayv.com/wp-content/uploads/2021/07/leaders-linkedIn.svg" alt="">

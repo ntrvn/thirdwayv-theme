@@ -1,4 +1,4 @@
-<section class="wrapper">
+<section class="wrapper" id="blogs-screen">
     <section class="">
         {!! get_field("blog_and_news_title") !!}
     </section>
