@@ -11,28 +11,28 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Why Thirdwayv?</a>
+        <a class="nav-link" data-scroll href="#why-thirwayv-screen">Why Thirdwayv?</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Company</a>
+        <a class="nav-link" data-scroll href="#company-screen">Company</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Case Studies</a>
+        <a class="nav-link" data-scroll href="#case-studies-screen">Case Studies</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Product</a>
+        <a class="nav-link" data-scroll href="#products-screen">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Security</a>
+        <a class="nav-link" data-scroll href="#security-screen">Security</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Blogs/News</a>
+        <a class="nav-link" data-scroll href="#blogs-screen">Blogs/News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Let's talk</a>
+        <a class="nav-link" data-scroll href="#lets-talk-screen">Let's talk</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Careers</a>
+        <a class="nav-link" data-scroll href="#">Careers</a>
       </li>
     </ul>
   </div>

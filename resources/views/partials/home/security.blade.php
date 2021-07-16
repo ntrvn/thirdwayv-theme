@@ -1,4 +1,4 @@
-<section class="wrapper">
+<section class="wrapper" id="security-screen">
     <section class="">
         {!! get_field("security_title_and_description") !!}
     </section>
