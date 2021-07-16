@@ -1,3 +1,27 @@
+.security-margin {
+    // background-color: #191919 !important;
+    margin: 0 auto;
+}
+
+.safeguard-mobile-container {
+    display: none;
+    
+    @media only screen and (max-width: 768px) {
+        /* tablets and desktop */
+        display: block;
+    }
+}
+
+.safeguard-svg {
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 767px) {
+		/* phones */
+		display: none;
+	}
+}
+
 .security-panels {
     height: 10vh;
     display: flex;
@@ -6,10 +30,10 @@
 }
 
 .three-circles {
-    max-width: 99vw; 
+    // max-width: 99vw; 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30vh;
+    margin-top: 48px;
 }
 
 .security-panels:nth-child(1), .security-panels-circle:nth-child(1),
@@ -39,18 +63,37 @@
 .line-through-text span { 
     background: #202020; 
     padding:0 2vw; 
+    font-size: .9em;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-iot {
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+    }
 }
 
 .top-circle {
     height: 30vh;
     width: 30vh;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     border: 1px solid #707070;
-    margin-top: -14vh;
+
+    @media only screen and (max-width: 768px) {
+        height: 20vh;
+        width: 20vh;
+    }
 }
 
 .top-circle::after {
@@ -63,11 +106,16 @@
     border: 1px solid #707070;
     border-radius: 50%;
     padding-top: 5vh;
+
+    @media only screen and (max-width: 768px) {
+        height: 18vh;
+        width: 18vh;
+    }
 }
 
-.security-panels-circle {
-    padding: 0 !important;
-}
+// .security-panels-circle {
+//     padding: 0 !important;
+// }
 
 #first-circle::after {
     content: '01';
@@ -82,5 +130,9 @@
 }
 
 .regtangular {
-    margin: 5vh;
+    margin: 5vh 5vh 2vh 5vh;
+
+    @media only screen and (max-width: 768px) {
+        margin: 2vh 5vh 2vh 5vh;
+    }
 }

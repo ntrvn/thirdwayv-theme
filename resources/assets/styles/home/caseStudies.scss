@@ -1,31 +1,36 @@
 .wrapper {
-    margin-top: 10vh;
-    min-height: 100vh;
+    // margin-top: 10vh;
+    min-height: auto;
     text-align: center;
 }
 
 .cs-section-2-container {
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;
 }
 
 .cs-inner-boxes {
     border-left: 1px solid #4bd7e8;
     padding: 0 !important;
-    transform: skew(-20deg);
+    // transform: skew(-20deg);
     margin: 10px;
 }
 
 .top-box {
-    height: 10vh;
+    height: 20vh;
     background-color: #191919;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+    }
 }
 
 .top-box > h5, .bottom-box > p {
-    transform: skew(20deg);
+    // transform: skew(20deg);
 }
 
 .bottom-box > p {
@@ -33,10 +38,22 @@
     padding-left: 2vw;
 }
 
-.cs-img {
-    max-width: 100%;
+section {
+    width: 100%;
     margin: 0 auto;
-}
 
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cs-section-2-container {
+        width: 97%;
+    }
+}
 
 

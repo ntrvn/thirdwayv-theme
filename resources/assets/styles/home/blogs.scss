@@ -1,6 +1,6 @@
 .blogs-carousel {
     width: 90vw;
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -9,6 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carousel-item-left, .carousel-item-right, .carousel-control-prev-icon, .carousel-arrows {
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .carousel-item-left > div > img, .carousel-item-right > div > img{

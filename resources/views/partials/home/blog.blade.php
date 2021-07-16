@@ -1,12 +1,6 @@
 <section class="wrapper">
     <section class="">
-        <h1 class="transparent-header">Blogs/News</h1>
-        <div class="card transparent-card card-centered">
-            <div class="card-body">
-                <h3 class="card-title blue">If it's on our mind, it should be on yours too.</h3>
-                <p class="card-text grey2">Learn about the IoT connectivity opportunities and challenges that currently inspire us, test our mettle, and sometimes keep us up at night. This section is about more than what's happening right now. It's also about what we see happening on our industry's horizon.</p>
-            </div>
-        </div>
+        {!! get_field("blog_and_news_title") !!}
     </section>
 
     <section class="blogs-carousel">
@@ -58,7 +52,7 @@
                             <div class="col-md-4 carousel-item-left">
                                 <img src="<?php bloginfo('template_url') ?>/assets/images/blogs/first.png" alt="" class="d-block w-100">
                                 <div>
-                                    <h5>BLOG POSTl</h5>
+                                    <h5>BLOG POST</h5>
                                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                 </div>
                             </div>

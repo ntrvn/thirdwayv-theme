@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/thirdwayv-sage",
-  "devUrl": "http://localhost:10008",
+  "devUrl": "thirdwayv.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
