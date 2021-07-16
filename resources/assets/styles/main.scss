@@ -338,7 +338,12 @@ button {
     height: 10vh;
 }
 
-.company-panels > h2, .company-panels > h4 {
+.company-panels > a {
+    text-decoration: none;
+}
+
+
+.company-panels > h2, .company-panels > h4, .company-panels > a > h4 {
     line-height: 10vh;
 }
 

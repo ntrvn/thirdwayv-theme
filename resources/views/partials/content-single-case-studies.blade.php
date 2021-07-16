@@ -35,6 +35,7 @@
                 $post_id = $post->ID; // current post ID
                 $cat = get_the_category(); 
                 $current_cat_id = $cat[0]->cat_ID; // current category ID 
+                $curr_cat_name = get_cat_name( $current_cat_id );
 
                 $args = array( 
                     'post_type' => 'case-studies',
@@ -82,14 +83,28 @@
         </div>
         
         <div class="row" style="max-width: 99vw; margin: 15vh auto 0 auto;">
+            @php
+                $leftColor = 'grey2';
+                $middleColor = 'grey2';
+                $rightColor = 'grey2';
+                if ($curr_cat_name == 'consumer medical devices') {
+                    $leftColor = 'blue';
+                } else if ($curr_cat_name == 'connected car') {
+                    $middleColor = 'blue';
+                } else {
+                    $rightColor = 'blue';
+                }
+            @endphp
+
+
             <div class="col company-panels col-active">
-                <h4>Healthcare & Consumer Medical Devices</h4>
+                <a href="/case-studies/connected-home-healthcare"><h4 class="<?php echo $leftColor ?>">Healthcare & Consumer Medical Devices</h4></a>
             </div>
             <div class="col company-panels col-disabled">
-                <h4>Connected Car</h4>
+                <a href="/case-studies/firmware-upgrades"><h4 class="<?php echo $middleColor ?>">Connected Car</h4></a>
             </div>
             <div class="col company-panels col-disabled">
-                <h4>Cold Chain Management and Asset Tracking</h4>
+                <a href="/case-studies/cold-chain-management-and-asset-tracking"><h4 class="<?php echo $rightColor ?>">Cold Chain Management and Asset Tracking</h4></a>
             </div>
         </div>
     </section>
