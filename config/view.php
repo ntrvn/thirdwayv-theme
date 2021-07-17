@@ -28,8 +28,9 @@ return [
     | directory. However, as usual, you are free to change this value.
     |
     */
+    // 'compiled' => wp_upload_dir()['basedir'].'/cache',
+    'compiled' => '/tmp/sage-cache',
 
-    'compiled' => wp_upload_dir()['basedir'].'/cache',
 
 
     /*
