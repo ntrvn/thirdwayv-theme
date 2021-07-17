@@ -61,25 +61,33 @@
                     $showPrev = "hidden";
                 }
             @endphp
-            <div class="col-1 single-case-img-container">
-                <a href="<?php echo get_permalink($previd) ?>" style="visibility: <?php echo $showPrev ?>">
-                    <img src="<?php bloginfo('template_url') ?>/assets/images/caseStudies/left-arrow.svg" alt="" class="cs-img">
-                </a>
-            </div>
-            <div class="col">
-                <div class="single-case-detail">
-                    <h5 class="blue">Background</h5>
-                    {!! get_field("background") !!}
+
+
+                <!-- <div class="col"> -->
+                    <div class="single-case-detail">
+                        <h5 class="blue">Background</h5>
+                        {!! get_field("background") !!}
+                    </div>
+                    <div class="single-case-detail">
+                        <h5 class="blue">{{get_field("detail-header")}}</h5>
+                        {!! get_field("detail") !!}
+                    </div>
+                <!-- </div> -->
+
+                <div style="clear: both;"></div>
+                
+                <div class="full-width">
+                    <div class="single-case-img-container">
+                        <a href="<?php echo get_permalink($previd) ?>" style="visibility: <?php echo $showPrev ?>">
+                            <img class="blog-arrows" src="<?php bloginfo('template_url') ?>/assets/images/caseStudies/left-arrow.svg" alt="" class="cs-img">
+                        </a>
+                    </div>
+                    <div class="single-case-img-container">
+                        <a href="<?php echo get_permalink($nextid) ?>" style="visibility: <?php echo $showNext ?>">
+                            <img class="blog-arrows" src="<?php bloginfo('template_url') ?>/assets/images/caseStudies/right-arrow.svg" alt="" class="cs-img">
+                        </a>
+                    </div>
                 </div>
-                <div class="single-case-detail">
-                    <h5 class="blue">{{get_field("detail-header")}}</h5>
-                    {!! get_field("detail") !!}
-                </div>
-            </div>
-            <div class="col-1 single-case-img-container">
-                <a href="<?php echo get_permalink($nextid) ?>" style="visibility: <?php echo $showNext ?>">
-                    <img src="<?php bloginfo('template_url') ?>/assets/images/caseStudies/right-arrow.svg" alt="" class="cs-img">
-                </a>
             </div>
         </div>
         

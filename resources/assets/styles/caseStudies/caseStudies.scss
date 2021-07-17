@@ -35,16 +35,23 @@
 .single-case-img-container {
     text-align:center; /* Align center inline elements */
     font: 0/0 a;       /* Hide the characters like spaces */
+    width: 5%;
+    margin: 0 auto;
 }
   
 .single-case-img-container:before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
+    // content: ' ';
+    // display: inline-block;
+    // vertical-align: middle;
+    // height: 100%;
 }
   
 .single-case-img-container img {
-    vertical-align: middle;
-    display: inline-block;
+    // vertical-align: middle;
+    // display: inline-block;
+
+    @media screen and (max-width: 768px) {
+        // display: flex;
+
+    }
 }

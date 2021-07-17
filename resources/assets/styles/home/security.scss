@@ -27,6 +27,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    h5 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
 }
 
 .three-circles {
@@ -49,7 +57,6 @@
 .security-panels:nth-child(3), .security-panels-circle:nth-child(3),
 #third-circle{
     background-color: #292929;
-    
 }
 
 .line-through-text {
@@ -58,14 +65,19 @@
     border-bottom: 1px solid #707070; 
     line-height: 0.1em;
     margin: 10px 0 20px; 
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .line-through-text span { 
     background: #202020; 
     padding:0 2vw; 
-    font-size: .9em;
-    font-weight: 500;
+    font-size: .8em;
+    font-weight: 550;
     text-transform: uppercase;
+    letter-spacing: 2px;
 
     @media only screen and (max-width: 768px) {
         display: none;
@@ -74,6 +86,10 @@
 
 .mobile-iot {
     display: none;
+    font-size: .8em;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
     @media only screen and (max-width: 768px) {
         display: block;
@@ -89,6 +105,8 @@
     justify-content: center;
     border-radius: 50%;
     border: 1px solid #707070;
+    box-shadow: 0 0 0 8.5px white, 0 0 0 1px transparent, 0 0 0 9px transparent;
+
 
     @media only screen and (max-width: 768px) {
         height: 20vh;
@@ -96,38 +114,66 @@
     }
 }
 
-.top-circle::after {
-    font-size: 2rem;
+.darkest {
+    box-shadow: 0 0 0 8.5px #191919, 0 0 0 1px white, 0 0 0 9px white;
+}
+
+.darker {
+    box-shadow: 0 0 0 8.5px #1C1C1C, 0 0 0 1px white, 0 0 0 9px white;
+}
+
+.dark {
+    box-shadow: 0 0 0 8.5px #292929, 0 0 0 1px white, 0 0 0 9px white;
+}
+
+.number-circle {
+    font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 6px;
+}
+
+.circle-title {
     font-weight: bold;
-    display: block;
-    width: 28vh;
-    height: 28vh;
-    position: absolute;
-    border: 1px solid #707070;
-    border-radius: 50%;
-    padding-top: 5vh;
 
     @media only screen and (max-width: 768px) {
-        height: 18vh;
-        width: 18vh;
+        font-size: .9rem;
     }
 }
+
+
+
+// .top-circle::after {
+//     font-size: 2rem;
+//     font-weight: bold;
+//     display: block;
+//     width: 28vh;
+//     height: 28vh;
+//     position: absolute;
+//     border: 1px solid #707070;
+//     border-radius: 50%;
+//     padding-top: 5vh;
+
+//     @media only screen and (max-width: 768px) {
+//         height: 18vh;
+//         width: 18vh;
+//     }
+// }
 
 // .security-panels-circle {
 //     padding: 0 !important;
 // }
 
-#first-circle::after {
-    content: '01';
-}
+// #first-circle::after {
+//     content: '01';
+// }
 
-#second-circle::after {
-    content: '02';
-}
+// #second-circle::after {
+//     content: '02';
+// }
 
-#third-circle::after {
-    content: '03';
-}
+// #third-circle::after {
+//     content: '03';
+// }
 
 .regtangular {
     margin: 5vh 5vh 2vh 5vh;

@@ -191,11 +191,18 @@ html {
 body {
   background-color: #202020;
   color: white;
+  overflow-x: hidden;
 }
 
 a {
 	color: white;
 	overflow-wrap: anywhere;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #4BD7E8;
+	transition: ease 0.2s;
 }
 
 button {
@@ -223,6 +230,11 @@ button {
   text-align: center;
 }
 
+.leaders-page {
+	width: 90%;
+	margin: 0 auto;
+}
+
 #wpadminbar {
   display: none !important;
 }
@@ -240,6 +252,7 @@ button {
 .logo-footer {
   width: 75%;
   height: auto;
+  margin-left: 3rem;
 
   @media only screen and (max-width: 767px) {
     width: 45%;
@@ -258,6 +271,8 @@ button {
 .card {
   display: flex;
   border: none !important;
+
+  border-radius: 0!important;
 }
 
 .card-centered {
@@ -318,8 +333,63 @@ button {
   font-weight: bold;
 }
 
+.blog-home-image {
+	width: 100%;
+	height: auto;
+}
+
+.sub-head {
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+
+	h5 {
+		font-size: 20px; 
+		font-weight: 700;
+		margin-top: .4rem;
+		text-transform: uppercase;
+	}
+
+	h5.blue.section-sep {
+		margin-bottom: 1.4rem;
+	}
+
+	@media only screen and (max-width: 767px) {
+		width: 97%;
+		text-align: center;
+	}
+}
+
+.security-bottom-text {
+	font-size: 12.5px;
+	text-transform: uppercase;
+}
+
+.how-we-do {
+	letter-spacing: 3px;
+	margin: 4rem auto;
+}
+
+.company-panels h2 {
+	font-size: 30px!important;
+	font-weight: 525;
+	margin-top: 3rem!important;
+}
+
+.company-panels > div > p {
+	margin-bottom: 3rem!important;
+}
+
+.col-active img {
+	width: 30px;
+}
+
 .blog-category {
-  margin-top: 48px !important;
+  margin-top: -35px !important;
+
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Text card on first page */
@@ -331,9 +401,9 @@ button {
   margin-top: 10vh;
 }
 
-#firstpage-card > .card-body {
-  padding: 16px;
-}
+// #firstpage-card > .card-body {
+//   padding: 16px;
+// }
 
 .bar-top-hr {
   margin: 0;
@@ -423,7 +493,7 @@ button {
 }
 
 .card-active {
-  border: 1px solid !important;
+  border: 1px solid #4BD7E8 !important;
   -webkit-transition: opacity 1s ease;
   -moz-transition: opacity 1s ease;
   -ms-transition: opacity 1s ease;
@@ -452,6 +522,14 @@ button {
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
+}
+
+.card-margin > .card-body {
+	width: 42%!important;
+}
+
+.image-margin-top {
+	margin-top: 2rem;
 }
 
 // .card-active {
@@ -500,7 +578,7 @@ button {
 }
 
 .company-panels > h2, .company-panels > h4, .company-panels > a > h4 {
-   line-height: 3vh;
+   line-height: 7vh;
     margin: 1rem;
 
 	@media only screen and (max-width: 768px) {
@@ -687,6 +765,17 @@ button {
 	padding: 0 auto;
 	padding-right: 2rem;
 
+	a {
+		text-decoration: none;
+	}
+
+	h5 {
+		font-weight: 700;
+		font-size: 20px;
+		text-transform: uppercase;
+		margin-top: .4rem;
+	}
+
 	@media screen and (max-width: 768px) {
 			padding-top: 3rem!important;
 			padding-right: 0;
@@ -698,3 +787,18 @@ button {
 	height: auto;
 }
 
+.cs-img {
+
+	@media only screen and (max-width: 768px) {
+		width: 25%!important;
+	}
+}
+
+.blog-arrows {
+	width: 45%;
+}
+
+.full-width {
+	width: 100%;
+	display: flex;
+}

@@ -15,7 +15,7 @@
 
     <!-- TODO: problematic hardcoding of width -->
     <section class="safeguard-bottom-text">
-        <p class="card-text grey2">We include all necessary components for communications and control between smartphones and the cloud, and to and from IoT devices. Other key elements include.</p>
+        <p class="security-bottom-text white">We include all necessary components for communications and control between smartphones and the cloud, and to and from IoT devices. Other key elements include.</p>
     </section>
 
     <section style="margin-top: 3vh; margin-bottom: 10vh">

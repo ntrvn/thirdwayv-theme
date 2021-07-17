@@ -15,19 +15,15 @@
       <div class="col left-align footer-card">
         <h5 class="blue">Let's Talk</h5>
         <p class="grey5">
-          20 Pacifica <br />
-          Suite 420 <br />
-          Irvine, California 92618 <br />
-          USA
+          <a href="https://goo.gl/maps/B1ApgLnd7BTZ7Fq69" target="_blank">20 Pacifica, Suite 420<br />
+          Irvine, California 92618, USA</a>
         </p>
 
         <p class="grey5">
-          (858) 733-9871
+          <a href="tel:8587339871">(858) 733-9871</a><br />
+          <a href="mailto:info@thirdwayv.com">info@thirdwayv.com</a>
         </p>
 
-        <p class="grey5">
-          info@thirdwayv.com
-        </p>
       </div>
     </div>
   <!-- </div> -->
