@@ -36,8 +36,14 @@
 
 body {
   font-family: "Gilroy";
-  // width: 100%;
-  // max-width: 100%;
+}
+
+::-moz-selection {
+  background-color: #000;
+}
+  
+  ::selection {
+  background-color: #000;
 }
 
 /*Font Colors*/
@@ -220,7 +226,7 @@ button {
   width: 100%;
 
   @media only screen and (max-width: 767px) {
-    height: 50vh;
+    height: auto;
   }
 }
 
@@ -287,7 +293,8 @@ button {
 .card-img-top {
   @media only screen and (max-width: 767px) {
     /* phones */
-    display: none;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -302,6 +309,7 @@ button {
 }
 
 .card-large {
+
   @media only screen and (max-width: 767px) {
     /* phones */
     padding: 1.25rem;
@@ -432,7 +440,7 @@ button {
 }
 
 .icons > i {
-  margin: 40px;
+  margin: 20px;
   transform: rotate(90deg);
 }
 
@@ -680,13 +688,14 @@ button {
   color: #707070 !important;
 }
 
-.leader-arrows {
-  width: 2rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
+// img.leader-arrows {
+//   // width: 2rem;
+//   // position: absolute;
+//   // top: 0;
+//   // bottom: 0;
+//   // margin: auto;
+//   display: none;
+// }
 
 .leaders-know-more {
   padding: 0 15px;
@@ -703,7 +712,7 @@ button {
 }
 
 .leaders-active > .row:first-child > .col:first-child > img {
-  display: block;
+  display: none;
 }
 
 .leaders-disabled > .row:first-child > .col:first-child > button {
@@ -743,18 +752,21 @@ button {
     display: inline;
     right: -2%;
     width: 20vw;
-    // transform: rotate(270deg);
+    margin-top: -8rem;
+
+    @media screen and (max-width: 300px) {
+      display: none;
+    }
   }
 
   .icons > i {
-    margin: 15px;
+    margin: 20px;
   }
 }
 
 // footer
 .footer {
 	padding: 8rem 5rem 5rem;
-	// width: 90%;
 
   @media screen and (max-width: 768px) {
     padding: 0 2rem;
@@ -801,4 +813,9 @@ button {
 .full-width {
 	width: 100%;
 	display: flex;
+}
+
+/*Search Results Page*/
+article.blog-news.type-blogs-news.status-publish.hentry {
+  margin: 1rem!important;
 }

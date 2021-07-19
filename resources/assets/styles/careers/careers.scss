@@ -1,3 +1,19 @@
+.career-container {
+    background: url('https://www.thirdwayv.com/wp-content/uploads/2021/07/careers-cover-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 70vh;
+  }
+
+  .career-header {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
 .careers-screen-container {
     min-height: 100vh;
     text-align: center;
@@ -14,26 +30,50 @@
     margin: 9vh auto;
 }
 
-.career-detail-circle {
-    height: 15vh;
-    background: #191919;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15vh;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 1px solid #707070;    
-}
+// .career-detail-circle {
+//     height: 15vh;
+//     background: #191919;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 15vh;
+//     border-radius: 50%;
+//     margin: 0 auto;
+//     border: 1px solid #707070;    
+// }
 
-.career-detail-circle::after {
-    content: '';
-    height: 14vh;
-    width: 14vh;
-    display: block;
-    position: absolute;
-    border: 1px solid #707070;
+// .career-detail-circle::after {
+//     content: '';
+//     height: 14vh;
+//     width: 14vh;
+//     display: block;
+//     position: absolute;
+//     border: 1px solid #707070;
+//     border-radius: 50%;
+// }
+
+// body {
+//     overflow-x: hidden;
+// }
+
+.careers-top-circle {
+    height: 150px;
+    width: 150px;
+    margin: 2rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
+    border: 1px solid #707070;
+    box-shadow: 0 0 0 8.5px #191919, 0 0 0 1px white, 0 0 0 9px white;
+    background-color: #000;
+
+    h5 {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0!important;
+    }
 }
 
 .career-detail-circle > h5 {
@@ -44,11 +84,16 @@
     text-align: center;
     width: 90%;
     margin: 5vh auto 0 auto;
+
+    p {
+        text-align: left;
+        font-size: 16px;
+        color: #DFDFDF;
+    }
 }
 
 .careers-benefit-summary {
-    width: 20vw;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .careers-perks-container {
@@ -56,10 +101,11 @@
 }
 
 .careers-panel {
-    height: 10vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
 }
 
 .careers-panel:nth-child(1) {
@@ -81,18 +127,48 @@
 .careers-requirements {
     margin-top: 10vh;
     background-color: #191919;
-    height: 20vh;
     border: 1px solid #707070; 
 }
 
 .careers-requirements > .col {
     border-left: 1px solid #707070;
-    height: 20vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem 3rem;
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 
 .careers-resume {
-    margin-top: 10vh;
+    margin-top: 5rem;
+    font-size: 15px;
+
+    a {
+        text-decoration: none;
+    }
+
+    h5 {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+}
+
+.careers-perks-container .careers-panel .sub-head {
+    width: 100%!important;
+
+    h5 {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 15px;
+        color: #BEBEBE;
+    }
 }

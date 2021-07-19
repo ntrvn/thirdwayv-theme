@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" id="contact">
     <section class="">
         {!! get_field("contact_title_and_description") !!}
     </section>

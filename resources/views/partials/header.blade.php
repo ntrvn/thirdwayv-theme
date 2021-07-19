@@ -29,10 +29,10 @@
         <a class="nav-link" data-scroll href="/#blogs-screen">Blogs/News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-scroll href="/#lets-talk-screen">Let's talk</a>
+        <a class="nav-link" data-scroll href="/#contact">Let's talk</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-scroll href="#">Careers</a>
+        <a class="nav-link" data-scroll href="/careers">Careers</a>
       </li>
     </ul>
   </div>

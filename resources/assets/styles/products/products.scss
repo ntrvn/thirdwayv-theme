@@ -1,8 +1,10 @@
 .single-products-container {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
+    background-color: black;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    height: 100vh!important;
+    width: 100%!important;
 }
 
 .single-products-detail-container {
@@ -25,17 +27,40 @@
 .product-detail-container {
     list-style-type: none;
     padding: 0 !important;
+
+    .col-6 {
+        @media only screen and (max-width: 767px) {
+            flex: 0 0 100%!important;
+            max-width: 100%!important;
+        }
+    }
 }
 
 .product-detail-item {
-    height: 22vh !important;
-    margin-bottom: 5vh;
+    height: auto !important;
+    margin-bottom: 3vh;
+
+    h4 {
+        font-weight: bold;
+        font-size: 25pt;
+        text-transform: uppercase;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 0;
+    }
 }
+
+
 
 .product-detail-item > .row {
     margin-left: auto !important;
     margin-right: auto !important;
     width: 90%;
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;    
+    }
 }
 
 .product-detail-item-header {
@@ -46,25 +71,29 @@
     width: 22vh;
     text-transform: uppercase;
     font-size: 1.1rem !important;
+
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .product-detail-item-left {
-    height: 22vh !important;
+    height: auto !important;
     background-color: #191919;
-    padding: 1vh 0;
+    padding: 3rem 0;
 }
 
 .product-detail-item-right {
-    height: 22vh !important;
-    background-color: rgb(25, 25, 25);
-    background-color: rgba(25, 25, 25, 0.5);
-    display: flex;
+    height: auto !important;
+    background-color: rgba(25, 25, 25, 0.75);
     justify-content: center;
     align-items: center;
+    padding: 5rem!important;
+    vertical-align: center;
 }
 
 .product-detail-item-right > div {
     padding: 5px !important;
+    text-align: left;
 }
 
 .product-panel-container {
