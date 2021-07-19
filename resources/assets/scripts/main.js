@@ -36,7 +36,6 @@ $(document).ready(function(){
     dots: true,
     slidesToShow: 3,
     arrows: true,
-    dots: true,
     responsive: [
       {
         breakpoint: 1024,
