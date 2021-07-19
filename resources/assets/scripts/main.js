@@ -36,6 +36,7 @@ $(document).ready(function(){
     dots: true,
     slidesToShow: 3,
     arrows: true,
+    dots: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -90,7 +91,7 @@ window.onload = () => {
     const button = document.getElementsByClassName('slick-arrow');
     for (var i = 0; i < button.length; i++) {
       button[i].onclick = (event) => {
-        console.log('ehee', event)
+        console.log(event)
         showPost();
       }
     }
