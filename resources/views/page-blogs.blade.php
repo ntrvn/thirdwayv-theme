@@ -36,7 +36,6 @@
 
 <section class="blogs-bottom-container">
     <h2 class="transparent-header" style="margin-top: 0; text-align: center;">Blog & News</h2>
-
     <div class="blogs-description">
         <p class="grey2">
             Learn about the IoT connectivity opportunities and challenges that currently inspire us, test our mettle, and sometimes keep us up at night. This section is about more than what's happening right now. It's also about what we see happening on our industry's horizon.

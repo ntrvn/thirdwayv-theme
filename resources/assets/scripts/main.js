@@ -30,12 +30,14 @@ var slideWidth = $slickFrame.width() / 3;
 var centerPadding = (slideWidth / 4) * 3;
 
 $(document).ready(function(){
+  let searchParams = new URLSearchParams(window.location.search);
   $('.blogs-page-carousel').slick({
     centerMode: true,
     centerPadding: centerPadding + 'px',
     dots: true,
     slidesToShow: 3,
     arrows: true,
+    initialSlide: searchParams.get('post-id') === null ? 0 : parseInt(searchParams.get('post-id'), 10),
     responsive: [
       {
         breakpoint: 1024,
@@ -70,13 +72,10 @@ $(document).ready(function(){
 
 const showPost = () => {
   var activeId = document.getElementsByClassName('slick-slide slick-current slick-active slick-center')[0].children[0].children[0].id + '-post-detail';
-
   const allElements = document.getElementsByClassName('blogs-detail-container')[0].children;
   for (var i = 0; i < allElements.length; i++) {
     var curr = document.getElementById(allElements[i].id);
-    console.log('sald', curr)
     if (allElements[i].id === activeId) {
-      console.log('idactive', activeId)
       curr.style.display = 'block';
     } else {
       curr.style.display = 'none';
@@ -90,7 +89,7 @@ window.onload = () => {
     const button = document.getElementsByClassName('slick-arrow');
     for (var i = 0; i < button.length; i++) {
       button[i].onclick = (event) => {
-        console.log('ehee', event)
+        console.log(event)
         showPost();
       }
     }

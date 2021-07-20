@@ -46,6 +46,8 @@
             {!! get_field("detail") !!}
         </div>
 
+            <div style="clear: both;"></div>
+
         <div class="row security-panel-container">
             <div class="col product-panel col-active">
                 <h4>01&emsp;&emsp; The Chain of Trust</h4>

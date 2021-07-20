@@ -1,18 +1,27 @@
 .single-case-studies-container {
-    background-position: center bottom!important;
+    background-position: center top!important;
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
 	height: 100vh;
-	width: 100%!important;
+	width: 75%!important;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1000px) {
+        width: 100%!important;
+    }
 }
 
 .single-case-header {
-    text-align: center;
-    // bottom: 5vh;
-    // margin-right: 1rem;
     vertical-align: middle;
     padding-top: 45vh;
     font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 

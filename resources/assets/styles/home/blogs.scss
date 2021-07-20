@@ -54,10 +54,13 @@
     height: 10px !important;
 }
 
-// .carousel-item-right {
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//     padding: 0 !important;
-// }
+.blog-carousel-know-more-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 
+.blog-carousel-know-more-btn > button {
+    font-size: 0.8vw;
+    height: 4vh;
+}
