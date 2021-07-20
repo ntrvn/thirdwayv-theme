@@ -6,6 +6,7 @@
     <div class="blogs-page-carousel">
 
         @php
+            $index = 0;
             $blogs = collect(get_posts([
                 'post_per_page' => -1,
                 'offset' => 0,
@@ -18,22 +19,35 @@
                     'image' => get_field('image', $post),
                     'detail' => get_field('detail', $post),
                     'date' => get_field('date', $post),
-                    'type' => get_field('type', $post)
+                    'type' => get_field('type', $post),
+                    'id' => $post->ID,
                 ];
             });
         @endphp
 
-
         @foreach ($blogs as $blog)
             @php
                 $id = preg_replace('/\s+/', '', $blog->title);
+                $href = '/blogs?post-id=' . $index
             @endphp
             <div class="blogs-carousel-item" id="{{ $id }}" style="text-align: left">
                 <img src="<?php echo esc_url($blog->image['url']); ?>" class="blog-carousel-image"/>
-                <p class="blue" style="margin-bottom: 0">{{ $blog->type }}</p>
-                <p class="grey2" style="margin-bottom: 0">{{ $blog->title }}</p>
-                <p class="blue" style="margin-bottom: 0">{{ $blog->date }}</p>
+                <div class="row">
+                    <div class="col-8">
+                        <p class="blue" style="margin-bottom: 0">{{ $blog->type }}</p>
+                        <p class="grey2" style="margin-bottom: 0">{{ $blog->title }}</p>
+                        <p class="blue" style="margin-bottom: 0">{{ $blog->date }}</p>
+                    </div>
+                    <div class="col-4 blog-carousel-know-more-btn">
+                        <button class="btn leaders-btn">
+                            <a href="<?php echo $href ?>">Know More</a>
+                        </button>
+                    </div>
+                </div>
             </div>
+            @php
+                $index+=1
+            @endphp
         @endforeach
     </div>
 
