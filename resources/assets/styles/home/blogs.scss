@@ -61,6 +61,20 @@
 }
 
 .blog-carousel-know-more-btn > button {
-    font-size: 0.8vw;
-    height: 4vh;
+    font-size: .5rem;
+    height: auto;
+    
+    a {
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 767px) { 
+        width: 100%;
+    }
+
+}
+
+.blog-carousel-know-more-btn > button:hover {
+    background-color: white;
+    color: black;
 }

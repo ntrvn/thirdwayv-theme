@@ -688,6 +688,11 @@ button {
   color: #707070 !important;
 }
 
+.leaders-btn:hover {
+  background-color: white;
+  color: #000 !important;
+}
+
 // img.leader-arrows {
 //   // width: 2rem;
 //   // position: absolute;
@@ -818,4 +823,16 @@ button {
 /*Search Results Page*/
 article.blog-news.type-blogs-news.status-publish.hentry {
   margin: 1rem!important;
+}
+
+.bottom-box a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12pt;
+  letter-spacing: 1px;
+}
+
+.cs-readmore-btn:hover {
+  color: white!important;
+  transition: 0.2s;
 }
