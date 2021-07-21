@@ -50,13 +50,13 @@
 
         <div class="row security-panel-container">
             <div class="col product-panel col-active">
-                <h4>01&emsp;&emsp; The Chain of Trust</h4>
+                <h4><a href="/security/chain-of-trust/">01&emsp;&emsp; The Chain of Trust</a></h4>
             </div>
             <div class="col product-panel col-disabled">
-                <h4>02&emsp;&emsp; Trust at the loT Edge</h4>
+                <h4><a href="/security/trust-iot-edge/">02&emsp;&emsp; Trust at the loT Edge</a></h4>
             </div>
             <div class="col product-panel col-disabled">
-                <h4>03&emsp;&emsp; Cloud Protection</h4>
+                <h4><a href="/security/cloud-protection/">03&emsp;&emsp; Cloud Protection</a></h4>
             </div>
         </div>
 
