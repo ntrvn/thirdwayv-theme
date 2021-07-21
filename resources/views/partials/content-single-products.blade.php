@@ -125,13 +125,13 @@
 
             <div class="row security-panel-container" style="max-width: 99vw; margin: 0 auto; clear: both;">
                 <div class="col product-panel col-active">
-                    <a href="/products/recordauth/"><h4>AppAuth™</h4></a>
+                    <a href="/products/appauth/"><h4>AppAuth™</h4></a>
                 </div>
                 <div class="col product-panel col-disabled">
-                    <a href="/products/recordauth/"><h4>SeamlessConnect™</h4></a>
+                    <a href="/products/seamlessconnect/"><h4>SeamlessConnect™</h4></a>
                 </div>
                 <div class="col product-panel col-disabled">
-                    <a href="/products/recordauth/"><h4>SecureConnectivity™</h4></a>
+                    <a href="/products/secureconnectivity/"><h4>SecureConnectivity™</h4></a>
                 </div>
                 <div class="col product-panel col-disabled">
                     <a href="/products/recordauth/"><h4>RecordAuth™</h4></a>

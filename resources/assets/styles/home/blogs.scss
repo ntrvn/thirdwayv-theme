@@ -58,6 +58,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+
+    a > button {
+        font-size: .6rem!important;
+    }
 }
 
 .blog-carousel-know-more-btn > button {

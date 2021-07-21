@@ -9,7 +9,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     ">
-    <h2 class="single-case-header">If it's on our mind, it should be on yours too</h2>
+    <h2 class="blog-single-case-header">If it's on our mind, it should be on yours too</h2>
 
     <div class="follow-container" style="top: 30vh">
         <div class="">

@@ -39,9 +39,11 @@
                         <p class="blue" style="margin-bottom: 0">{{ $blog->date }}</p>
                     </div>
                     <div class="col-4 blog-carousel-know-more-btn">
-                        <button class="btn leaders-btn">
-                            <a href="<?php echo $href ?>">Know More</a>
-                        </button>
+                        <a href="<?php echo $href ?>">    
+                            <button class="btn leaders-btn">
+                                Know More
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

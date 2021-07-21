@@ -135,6 +135,19 @@
     text-align: left;
 }
 
+.product-panel {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    a {
+        text-decoration: none;
+    }
+}
+
 .product-panel-container {
     margin: 0 auto;
     bottom: 0;
